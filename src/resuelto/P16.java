@@ -23,7 +23,7 @@ public class P16 {
         System.out.println("Quants clients vols acceptar com a màxim?");
         Scanner sc = new Scanner(System.in);
         final int MAX_CLIENTS = sc.nextInt();
-        
+
         try {
             // Se inicializa el socket del servidor
             ServerSocket socketServidor = new ServerSocket();
@@ -54,7 +54,7 @@ public class P16 {
                     // Cierre de objetos socket, InputStream y OutputStream dirigidos a los nuevos clientes
                     entrada.close();
                     sortida.close();
-                    socketNou.close(); 
+                    socketNou.close();
             }
             System.out.println("Servidor aturat.");
             // Cierre del socket servidor
